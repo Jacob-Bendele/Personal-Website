@@ -1,0 +1,40 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin: 0;
+	
+}
+
+header
+{
+	background: #83B7C8;
+	width: 100vw;
+	height: 100vh;
+}
+
+section
+{
+	background: green;
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+h1
+{
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%)
+}
+
+h2
+{
+	margin-top: 0;
+}
