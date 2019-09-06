@@ -31,8 +31,7 @@ nav
 section
 {
 	padding-top: 50px;
-	width: 100vw;
-	height: 100vh;
+	
 	
 }
 
@@ -122,7 +121,6 @@ li a:hover
 	color: #FF3100;
 }
 
-
 /* Column CSS */
 body, *, *:before, *:after 
 {
@@ -132,37 +130,28 @@ body, *, *:before, *:after
 }
 
 /* Create two unequal columns that floats next to each other */
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+}
 .column 
 {
 	
-	box-sizing: border-box;
-	padding: 3vh;
+
 }
 
 .left 
 {
-	float: left;
-	width: 40%;
-
+	flex: 40%;
+	padding: 3vh;
 }
 
 .right 
 {
-	width: 60%;
-	float: right;
+	flex: 60%;
 	margin-bottom: 15vh;
 	padding: 15vh 10vw;	
-}
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) 
-{
-  .column 
-	{
-		width: 100%;
-	}
-
 }
 
 .icons1
@@ -189,7 +178,6 @@ body, *, *:before, *:after
 .aboutme
 {
 	line-height: 1.2;
-	text-indent: 25px;
 	font-size: 18px;
 	min-width: 250px;
 	overflow: auto;
@@ -197,6 +185,7 @@ body, *, *:before, *:after
 
 .portfolio
 {
+	height: 100vh;
 	background: #F5F5F5;
 }
 
