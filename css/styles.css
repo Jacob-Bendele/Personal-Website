@@ -30,6 +30,7 @@ nav
 
 section
 {
+	padding-top: 50px;
 	width: 100vw;
 	height: 100vh;
 	
@@ -44,14 +45,8 @@ img
 	margin-right: auto;
 }
 
-h1, h2, h3
-{
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
 h1
 {
-	font-family: 'Roboto Condensed', sans-serif;
 	color: white;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	max-width: 750px;
@@ -66,21 +61,16 @@ h1
 
 h2
 {
-
-	font-family: 'Roboto Condensed', sans-serif;
 	font-style: bold;
 	font-size: 30pt;
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 50px;
 	text-decoration: underline;
-	background: blue;
 }
 
 h3
 {
-	background: red;
 	min-width: 260px;
 	margin: 5px auto;
 	font-style: bold;
@@ -91,10 +81,16 @@ h3
 
 i
 {
-	display: block;
-	padding: 20px 0;
 	font-size: 50pt;
 
+}
+
+a.github
+{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #114480;
 }
 
 ul.navigation
@@ -126,31 +122,39 @@ li a:hover
 	color: #FF3100;
 }
 
+
+/* Column CSS */
+body, *, *:before, *:after 
+{
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
 /* Create two unequal columns that floats next to each other */
-.column {
-  box-sizing: border-box;
-  float: left;
-  background: ;
-  padding: 3vh;
-		background: yellow;
+.column 
+{
+	
+	box-sizing: border-box;
+	padding: 3vh;
 }
 
-.left {
-  width: 40%;
+.left 
+{
+	float: left;
+	width: 40%;
 
 }
 
-.right {
-  width: 60%;
-	margin-bottom: 10vh;
+.right 
+{
+	width: 60%;
+	float: right;
+	margin-bottom: 15vh;
+	padding: 15vh 10vw;	
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) 
 {
@@ -158,27 +162,49 @@ li a:hover
 	{
 		width: 100%;
 	}
+
 }
 
-.skills
+.icons1
 {
-	background: green;
+	margin-top:50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icons2
+{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon3
+{
+	margin-top: 15%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.aboutme
+{
+	line-height: 1.2;
+	text-indent: 25px;
+	font-size: 18px;
+	min-width: 250px;
+	overflow: auto;
 }
 
 .portfolio
 {
 	background: #F5F5F5;
 }
-.aboutme
+
+.devicon-github-plain-wordmark
 {
-	font-family: 'Roboto Condensed', sans-serif;
-	line-height: 1.2;
-	font-size: 18px;
-	background: ;
-	min-width: 250px;
-	overflow: auto;
-	background: green;
+	font-size: 125pt;
 }
+
 
 .button
 {
@@ -192,12 +218,16 @@ li a:hover
 	border-style: solid;
 	border-width: 3px;
 	
-	font-family: 'Roboto Condensed', sans-serif;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 	font-size: 2em;
 	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.button::after
+{
+	content: "↓";
 }
 
 .button:hover
