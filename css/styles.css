@@ -176,6 +176,14 @@ body, *, *:before, *:after
 	justify-content: space-around;
 }
 
+.icon3desc
+{
+	display: flex;
+	justify-content: space-around;
+	padding-left: 10px;
+	font-size: 20pt;
+}
+
 .aboutme
 {
 	line-height: 1.2;
@@ -190,7 +198,7 @@ body, *, *:before, *:after
 	background: #F5F5F5;
 }
 
-.devicon-github-plain-wordmark
+.devicon-github-plain
 {
 	font-size: 125pt;
 }
