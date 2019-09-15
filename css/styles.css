@@ -1,6 +1,7 @@
 html
 {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body
@@ -31,7 +32,7 @@ nav
 section
 {
 	padding-top: 50px;
-	
+	width: 100vw;
 	
 }
 
@@ -97,7 +98,7 @@ ul.navigation
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow-x: auto;
 	background-color: #333;
 }
 
