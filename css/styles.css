@@ -171,7 +171,7 @@ body, *, *:before, *:after
 
 .icon3
 {
-	margin-top: 15%;
+	margin-top: 3%;
 	display: flex;
 	justify-content: space-around;
 }
@@ -235,5 +235,48 @@ body, *, *:before, *:after
 	color: white;
 }
 
+.gVisualizer
+{
+	margin-top: 40px;
+	display: inline;
+	padding: 0px;
+	border: 0;
+}
+
+.gVisualizer:hover
+{
+	border: 2px #FF3100 solid;      
+	padding: 0px;
+}
+
+.imgLink
+{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.repo
+{
+	text-decoration: none;
+	color: black;
+}
+
+.repo:hover
+{
+	color: #FF3100
+}
+
+.gVisLink
+{
+	margin: 0px auto;
+}
+
+.projDesc
+{
+	font-size: 20pt;
+	padding: 0px;
+	margin-top: 1%;
+	color: black;
+}
 
 
