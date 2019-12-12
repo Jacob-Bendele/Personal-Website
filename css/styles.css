@@ -31,7 +31,7 @@ nav
 
 section
 {
-	padding-top: 50px;
+	height: 110vh;
 	width: 100vw;
 	
 }
@@ -146,6 +146,7 @@ body, *, *:before, *:after
 {
 	flex: 40%;
 	padding: 3vh;
+	padding-top: 10vh;
 }
 
 .right 
@@ -192,9 +193,14 @@ body, *, *:before, *:after
 	overflow: auto;
 }
 
+.about
+{
+	padding-top: 50px;
+}
+
 .portfolio
 {
-	height: 100vh;
+	padding-top: 50px;
 	background: #F5F5F5;
 }
 
