@@ -196,12 +196,14 @@ body, *, *:before, *:after
 .about
 {
 	padding-top: 50px;
+	height: 120vh;
 }
 
 .portfolio
 {
 	padding-top: 50px;
 	background: #F5F5F5;
+	height:100vh;
 }
 
 .devicon-github-plain
@@ -283,6 +285,12 @@ body, *, *:before, *:after
 	padding: 0px;
 	margin-top: 1%;
 	color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+	  height: 150vh;
+  }
 }
 
 
