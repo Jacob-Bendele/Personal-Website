@@ -130,6 +130,15 @@ body, *, *:before, *:after
 	box-sizing: border-box;
 }
 
+.portContainer
+{
+	margin-top: 50px;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	display: flex;
+	justify-content: space-between;
+}
+
 /* Create two unequal columns that floats next to each other */
 .row
 {
@@ -172,7 +181,7 @@ body, *, *:before, *:after
 
 .icon3
 {
-	margin-top: 3%;
+	margin-top: 5%;
 	display: flex;
 	justify-content: space-around;
 }
