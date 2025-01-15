@@ -1,1 +1,1 @@
-Just my personal website, powered by CRTs 📺, ASCII art, and retro desktop environments.
+Just my [personal website](https://bendele.xyz), powered by CRTs 📺, ASCII art, and retro desktop environments.
