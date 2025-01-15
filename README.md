@@ -1,2 +1,1 @@
-# Personal Website
-I have always wanted a [personal website](https://www.bendele.xyz) so this is my foray into the world of HTML and CSS (for now).
+Just my [personal website](https://bendele.xyz), powered by CRTs 📺, ASCII art, and retro desktop environments.

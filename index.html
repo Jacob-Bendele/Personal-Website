@@ -1,84 +1,58 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/styles.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-		<link rel="stylesheet"	href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Jacob Bendele | Resume</title>
-	</head>
-	
-	<body>
-		<header id="home">
-			<h1>Hello, I'm Jacob Bendele.<br>I'm a Computer Engineering student.</h1>
-			<a href="#about" class="button">Learn More</a>
-		</header>
-		
-		<nav>
-			<ul class="navigation">
-				<li class="navigation"><a href="#home">Home</a></li>
-				<li class="navigation"><a href="#about">About</a></li>
-				<li class="navigation"><a href="#portfolio">Portfolio</a></li>
-				<!--<li class="navigation"><a href="#contact">Contact</a></li>-->
-			</ul>
-		</nav>
-		
-		<section id="about" class="about">
-			<h2>About Me</h2>
-			<div class="row">
-				<div class="column left">
-					<img src="images/profile.jpg" alt="Profile Pictures">
-					<h3>Who am I?</h3>
-					<p class="aboutme">
-					I am a student at the University of Central Florida and am currently pursuing my B.S. in Computer Engineering. My primary focuses are on AI/Machine Learning as well as Computer Graphics.
-					</p>
-				</div>
-
-				<div class="column right">
-					<h3 class="tech">Technologies</h3>
-					<div class="icons1">
-						<i class="devicon-c-plain"></i>
-						<i class="devicon-java-plain-wordmark colored"></i>
-						<i class="devicon-javascript-plain colored"></i>
-					</div>
-					<div class="icons2">
-						<i class="devicon-python-plain-wordmark colored"></i>
-						<i class="devicon-git-plain-wordmark colored"></i>
-						<i class="devicon-linux-plain colored"></i>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="portfolio" class="portfolio">
-			<h2>Portfolio</h2>
-			<div class="portContainer">
-				<div>
-					<a href="https://jacob-bendele.github.io/Graph-Visualizer-Project/" class="gVisLink" target="_blanK"><img src="images/graph.jpg" class= "gVisualizer" alt="Graph Visualizer"></a>
-					<p class="projDesc">Graph Visualizer | <a href="https://github.com/Jacob-Bendele/Graph-Visualizer-Project" class="repo">Code</a></p>
-				</div>
-				<div>
-					<a href="https://github.com/Jacob-Bendele/Musicode" class="gVisLink" target="_blanK"><img src="images/musicode.png" class= "gVisualizer" alt="Musicode App"></a>
-					<p class="projDesc">Musicode App | <a href="https://github.com/Jacob-Bendele/Musicode" class="repo">Code</a></p>
-				</div>			
-				<div>
-					<a href="assets/objectDetectionDrone.pdf" class="gVisLink" target="_blanK"><img src="images/drone.png" class= "gVisualizer" alt="Musicode App"></a>
-					<p class="projDesc">Object Detection Drone | <a href="assets/objectDetectionDrone.pdf"" class="repo">Doc</a></p>
-				</div>
-			</div>
-			<div class="icon3">
-				<a href="https://github.com/Jacob-Bendele" target="_blanK" class="github"><i class="devicon-github-plain"></i></a>
-				<a href="assets/Resume.pdf" title="Jacob-Bendele-Resume" target="_blank" class="github"><i class="fa fa-file" style="font-size:120pt"></i></a>
-			</div>
-			<div class="icon3desc">
-				<p>GitHub</p>
-				<p>Resume</p>
-			</div>
-		</section>	
-		
-		<footer id="contact">
-		</footer>
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="src/index.js" defer></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Jacob Bendele</title>
+</head>
+<body class="crt cursor-default">
+    <!-- Desktop Background -->
+    <div class="taskbar">
+        <div class="start-button"><img class="hidden-icon" src="assets/icons/desktop/start-here.png" alt="retro taskbar icon for an old computer."> Start</div>
+        <div class="task-icons">
+            <div class="task-icon"><img src="assets/icons/desktop/utilities-terminal.png" alt="retro taskbar icon for an old computer."></div>
+            <div class="task-icon"><img src="assets/icons/desktop/system-file-manager.png" alt="retro taskbar icon for an old computer."></div>
+            <div class="task-icon"><img src="assets/icons/desktop/applets-screenshooter.png" alt="retro taskbar icon for an old computer."></div>
+            <div class="task-icon"><img src="assets/icons/desktop/audio-input-microphone.png" alt="retro taskbar icon for an old computer."></div>
+            <div class="task-icon"><img src="assets/icons/desktop/input-gaming.png" alt="retro taskbar icon for an old computer."></div>
+        </div>
+        <div class="system-tray">
+            <div class="system-time" id="system-time">12:00</div>
+        </div>
+    </div>
+    <!-- Terminal Windows -->
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button red"></span>
+                <span class="terminal-button yellow"></span>
+                <span class="terminal-button green"></span>
+            </div>
+            <div class="terminal-title">Terminal</div>
+        </div>
+        <div class="terminal-body">
+            <p class="terminal-output">
+                    <span class="root">jacob@bendele.xyz</span>
+                    <span class="tick">❯</span>
+                    <span id="typed"></span>
+                    <span class="blinking-cursor">|</span>
+            </p>
+            <br>
+            <p class="terminal-output terminal-loaded-program">
+                <span class="root">jacob@bendele.xyz</span>
+                <span class="tick">❯</span>
+            </p>
+            <div class="terminal-loaded-program" id="about-me"></div>
+        </div>
+	</div>
+    <div class="overlay">AV-1</div>
+</body>
 </html>
+
+
+<!-- TODO: Text for ascii font size based on viewport is too big on large displays. Everything else looks generally fine
+ Resizing form large media quiery to small resizes the screen to smaller positions and triggers small animation/same on small to big too.
+ Need to add desktop env background to the first page and make the 
+ reduce the crt flicker -->
