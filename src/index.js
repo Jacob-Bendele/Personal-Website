@@ -37,9 +37,29 @@ function showAboutMe() {
         })
 }
 
+function updateTime() {
+    const now = new Date();
+    const options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true // Use 12-hour format
+    };
+    
+    const dateTimeString = now.toLocaleString('en-US', options);
+    document.getElementById('system-time').textContent = dateTimeString;
+
+}
+
+
 function main() {
+    setInterval(updateTime, 60000); // Update every minute
     setTimeout(launchCommandAnimation, 5000);
     setTimeout(showAboutMe, 12000);
+    updateTime();
 }
 
 main()
