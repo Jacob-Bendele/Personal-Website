@@ -168,8 +168,8 @@ img {
 
 /* Terminal Window */
 .terminal-window {
-	width: 600px;
-	height: 400px;
+	width: 80vw;
+	height: 60vh;
 	margin: auto;
 	top: 25vh;
 	display: block;
@@ -181,6 +181,13 @@ img {
 	overflow: hidden;
 	animation: expandSmall 2.5s 10s forwards;
 }
+
+@media (min-width: 600px) {
+	.terminal-window {
+		width: 600px;
+		height: 400px;
+	}
+  }
 
 @media (min-width: 2000px) {
 	.terminal-window {
@@ -260,10 +267,6 @@ img {
 }
 
 @keyframes expandSmall {
-	from {
-		width: 600px;
-		height: 400px;
-	}
 
 	to {
 		width: 100%;
