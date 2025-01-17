@@ -1,10 +1,20 @@
+@font-face {
+	font-family: 'W95FA';
+	src: url('/assets/fonts/w95fa/w95fa.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Ubuntu Mono';
+	src: url('/assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+}
+
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 
 body {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Courier New', monospace;
 	margin: 0;
 	min-height: 100vh;
 	background-color: rgb(55, 126, 127);
@@ -12,11 +22,14 @@ body {
 }
 
 .cursor-default {
-    cursor: url(/assets/images/cursor-default.png) 0 0,auto;
+	cursor: url('/assets/images/cursor-default.png') 0 0, auto;
 }
 
-a, button, select, input[type="submit"] {
-	cursor: url(/assets/images/cursor-pointer.png) 14 8,auto;
+a,
+button,
+select,
+input[type="submit"] {
+	cursor: url('/assets/images/cursor-pointer.png') 14 8, auto;
 }
 
 /* Navigation  */
@@ -60,7 +73,7 @@ ul>li {
 	align-items: center;
 }
 
-#skills > pre {
+#skills>pre {
 	font-size: 0.9rem;
 }
 
@@ -96,6 +109,8 @@ img {
 
 /* Desktop Background */
 .taskbar {
+	font-family: 'W95FA', sans-serif;
+	;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -106,6 +121,7 @@ img {
 	align-items: center;
 	padding: 0 10px;
 }
+
 .start-button {
 	display: flex;
 	align-items: center;
@@ -139,6 +155,7 @@ img {
 	padding-right: 10px;
 	gap: 10px;
 }
+
 .task-icon {
 	max-height: 80%;
 	height: 80%;
@@ -151,15 +168,18 @@ img {
 	border-radius: 5px;
 	padding: 5px;
 }
+
 .task-icon img {
 	max-width: 100%;
 	height: auto;
 }
+
 .system-tray {
 	display: flex;
 	color: white;
 	margin-left: auto;
 }
+
 .system-time {
 	min-width: 80px;
 	margin-right: 20px;
@@ -168,6 +188,7 @@ img {
 
 /* Terminal Window */
 .terminal-window {
+	font-family: 'Ubuntu Mono', monospace;
 	width: 80vw;
 	height: 60vh;
 	margin: auto;
@@ -177,7 +198,6 @@ img {
 	border-radius: 10px;
 	background-color: #2D2D2D;
 	color: #FFFFFF;
-	font-family: monospace;
 	overflow: hidden;
 	animation: expandSmall 2.5s 10s forwards;
 }
@@ -187,7 +207,7 @@ img {
 		width: 600px;
 		height: 400px;
 	}
-  }
+}
 
 @media (min-width: 2000px) {
 	.terminal-window {
