@@ -57,7 +57,23 @@ ul>li {
 #ascii-name {
 	font-size: 1.1vw;
 	text-align: center;
+	display: none;
 }
+
+#ascii-name-v {
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+@media  (min-width: 500px) {
+	#ascii-name-v {
+		display: none;
+	}
+	
+	#ascii-name {
+		display: block;
+	}
+  }
 
 .content-introduction {
 	font-size: 1.6rem;
